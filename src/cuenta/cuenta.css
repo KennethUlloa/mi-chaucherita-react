@@ -1,0 +1,19 @@
+.cuenta-wrapper {
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.25);
+}
+
+.cuenta-wrapper .title {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.cuenta-wrapper .monto-element {
+    font-size: 2em;
+}
+
+.red-color {
+    color: rgb(121, 6, 6);
+}
