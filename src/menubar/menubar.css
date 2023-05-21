@@ -1,17 +1,44 @@
-.menubar {
+header {
+    height: 60px;
+    width: 100%;
+    padding: 0 10px;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    padding: 5px;
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.25);
 }
 
-.icon-wrapper {
-    width: 100%;
-    height: 58px;
+nav {
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 5px;
+    height: fit-content;
+    width: fit-content;
+    margin: 0;
+    padding: 0;
+}
 
-    border: 1px solid red;
+.l-nav-menu {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+
+.l-nav-item {
+    position: relative;
+    padding: 10px;
+}
+
+.l-nav-item a {
+    text-decoration: none;
+    color: black;
+}
+
+.l-nav-item:hover::after {
+    content: "";
+    background-color: var(--ln-bg-primary);
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    border-radius: 2px;
 }

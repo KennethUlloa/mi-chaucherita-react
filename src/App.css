@@ -1,15 +1,47 @@
-* {
-  margin: 0;
-  padding: 0;
+:root {
+  --ln-bg-primary: #215F45;
+  --ln-body: #F8F8F8;
+  --ln-bg-soft: #E4E8E7
+
+}
+
+body {
+  background-color: var(--ln-body);
+}
+
+.bg-soft {
+  background-color: var(--ln-bg-soft);
+}
+
+.bg-primary- {
+  background-color: var(--ln-bg-primary);
+}
+
+.color-primary- {
+  color: var(--ln-bg-primary);
 }
 
 .App {
-  display: grid;
-  grid-template-columns: fit-content(48px) auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px
 }
 
-.cuentas-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 15px;
+.icon-color {
+  color: var(--ln-bg-primary);
+}
+
+.btn-primary {
+  background-color: var(--ln-bg-primary);
+  color: white;
+  border: none;
+}
+
+.unstyled-a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  background-color: #277554;
 }
